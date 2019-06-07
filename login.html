@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+      <!-- bootsrap main file link-->
+      <link rel="stylesheet" type="text/css" href="bootstrap/font-awesome-4.7.0/css/font-awesome.min.css">
+      <!-- bootsrap font-awesome icons file link-->
+      <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+      <!-- bootstrap js file link-->
+      <script type="text/javascript" src="bootstrap/js/jquery.min.js"></script>
+      <!-- bootstrap jquery file link-->
+      <title>login</title>
+      <style>
+      .nav{background-color:#8d38c9; color: white;} /*background color of nav*/
+      .nav img{ padding-top: 20px; }/* logo fixing css*/
+      /*nav bar desing */
+      li{float: left;}
+      .dropdown{ display: inline-block; position: relative; }
+      li a,.dropbtn{ display: block; color: white;  }
+      .dropdown-content{ display: none; position: absolute;z-index: 1; text-align: left;}/* content inside  drop down*/
+      .dropdown-content a h6 {text-decoration-style: none;  }
+      .dropdown:hover .dropdown-content{ display:block;background-color:#8d38c9;width:200px; } /* content inside  drop down*/
+      .dropdown:hover .dropdown-content a  {  padding: 10px;}
+      .hhmp ul b h6{float: right;}
+      /*close of nav bar design*/
+      /*.hhmp ul li a {background-color: #e3e4fa;}*/
+      body{background-color:#98afc7;}
+      .btn{margin-top:10px;}/* search button style*/
+      /*login page css*/
+      .google{color: white;width:15px;height:15px;background-color: red;
+      text-align: center; line-height: 15px; font-size:25px;   padding: 0.4em 0.4em; border-radius: 20px;border-style: none; } /* google+ font icon css*/
+      .facebook{color: white;width:20px;height: 20px;background-color:blue;
+      text-align: center; line-height: 15px; font-size: 25px;   padding: 0.5em 0.7em; border-radius: 20px; border-style: none; border-width: none; } /* facebook font icon css*/
+      .fo{ margin: 10px; }/*email and pass box design*/
+      .l1{margin:10px; }/*labels  design*/
+      /*login btn css*/
+      .button{width: 100px; height: 30px; margin: 12px;margin-bottom: 20px; border-radius:10px;border-style: none; background-color:#e8290b; color: white;}
+      /*css for about section*/
+      .iio{color: white; width: 20px;height: 20px;line-height:20px;font-size:15px; text-align: center;margin:10px; border-radius:3px;}/* font icons design*/
+      .btn{margin-top:5px;}/* search button style*/
+      </style>
+   </head>
+   <body>
+      <div class=" nav container">
+         <!-- navigation bar-->
+         <div class="row">
+            <div class="container col-xs-3">
+               <!-- this helps to divide logo part and nav lables-->
+               <img src="image/image.jpg" class="img-responsive img-rounded nav-brand" width="150px;" alt="logo">
+            </div>
+            <div class="hhmp container col-xs-9">
+               <ul style="list-style-type: none;">
+                  <b>
+                  <h6>
+                  <li><a href="index.html">&nbsp;&nbsp;&nbsp;&nbsp;Home&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                  <li class="dropdown">
+                     <a href="#" class="dropbtn">&nbsp;&nbsp;&nbsp;&nbsp;Jobs&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                     <div class="dropdown-content">
+                        <a href=""><span style="font-size:12px;">Electronics and communication</span></a>
+                        <a href=""><span style="font-size:12px;">Electrical and electronics</span></a>
+                        <a href=""><span style="font-size:12px;">computer science</span></a>
+                        <a href=""><span style="font-size:12px;">civil</span></a>
+                        <a href=""><span style="font-size:12px;">Machanical</span></a>
+                     </div>
+                  </li>
+                  <li><a href="login.html">&nbsp;&nbsp;&nbsp;&nbsp; Login&nbsp;&nbsp;&nbsp;</a></li>
+                  <li><a href="contact.html"> &nbsp;&nbsp;&nbsp;&nbsp;Contact&nbsp;&nbsp;&nbsp;</a></li>
+                  <li><a href="about.html">&nbsp;&nbsp;&nbsp;&nbsp;About&nbsp;&nbsp;&nbsp;</a></li>
+                  </h6>
+                  </b>
+               </ul>
+               <!-- end of ul list-->
+            </div>
+            <!-- end of nav bar div-->
+         </div>
+         <!-- end of row-->
+         <!-- navigation bar close-->
+         <h2 align="center" class="container" style="color:black;">Land a job with skill</h2>
+         <!-- search option design-->
+         <div class="container">
+            <div class="form-horizontal">
+               <form>
+                  <div class="col-xs-3" align="center">
+                     <label class="col-xs-3">
+                        <h5>skills</h5>
+                     </label>
+                     <input type="search" class="form-control" placeholder="skills" required="required" autocomplete="on">
+                  </div>
+                  <div class="col-xs-3">
+                     <!-- experiance div open-->
+                     <label class="col-xs-3 container">
+                        <h5>Experiance</h5>
+                     </label>
+                     <td>
+                        <select class="form-control">
+                           <option>select</option>
+                           <option>1 year</option>
+                           <option>2 year</option>
+                           <option>3 year</option>
+                           <option>4 year</option>
+                           <option>5+ year</option>
+                        </select>
+                        <!-- experiance select close-->
+                     </td>
+                  </div>
+                  <!-- experiance div close-->
+                  <div class="col-xs-3">
+                     <!--location div open-->
+                     <label class="col-sx-3">
+                        <h5>Location</h5>
+                     </label>
+                     <td>
+                        <select class="form-control">
+                           <option>select</option>
+                           <option>Banglore</option>
+                           <option>Shivamogga</option>
+                           <option>Hassan</option>
+                           <option>Dheli</option>
+                           <option>mumbai</option>
+                           <option>channai</option>
+                           <option>Bihar</option>
+                        </select>
+                     </td>
+                  </div>
+                  <!-- location div close-->
+                  <div class="btn">
+                     <!-- search button div open-->
+                     <h3><label class="col-xs-3"></label></h3>
+                     <h3><input type="submit" class="form-control btn-success btn" value="search" ></h3>
+                  </div>
+                  <!--search button close-->
+               </form>
+               <!-- form close-->
+            </div>
+            <!-- form horizontal close-->
+         </div>
+         <!-- search container is closed -->
+      </div>
+      <!-- end of search bar-->
+   </div>
+   <!-- container div close-->
+   <!-- end of navigation region ,super happy -->
+   <!--it may changes for all pages -->
+   <!--login section and addding font icons ,buttons email and pass  -->
+   <div class="header container" style="background-color: #53e0bc">
+      <center><i class="fa fa-user-circle fa-5x" ></i></center>
+      <center>
+      <label>
+         <h1>Jobseekers  Login / Register</h1>
+      </label>
+      </center>
+      <h3>
+      <center>login with <i class="facebook"><i class="fa fa-facebook fa-1"></i></i>  &nbsp;&nbsp;<i class="google"><i class="fa fa-google-plus"></i></i></center>
+      </h3>
+      <hr width="50%" align="center">
+      <!--for email id and password input-->
+      <form>
+         <div class="row container">
+            <!-- email id password div-->
+            <label class="col-sm-2 control-label l1 container">Email</label>
+            <div class="col-sm-10">
+               <!-- email div-->
+               <input type="email" name="" class="form-control container fo" placeholder="Enter Email ID" required="on" pattern="[A-Z a-z]{5,10}">
+            </div>
+            <!-- close of email div-->
+            <label class="col-sm-2 control-label l1 container">Password</label>
+            <div class="col-sm-10">
+               <!-- password div-->
+               <input type="password" name="" class="form-control container fo" placeholder=" Enter password" required="on">
+            </div>
+            <!-- password div close-->
+         </div>
+         <!-- email and password div-->
+         <!--rember me password and checkbox section below-->
+         <h5 class="container control-label row">
+         <div class="col-xs-6">
+            <!-- remember me and check box div-->
+            <input type="checkbox" checked="">Remember me
+         </div>
+         <!-- close of remember me and check box -->
+         <div  class="col-xs-6">
+            <!-- div for forgot password-->
+            <a href="#" style="text-decoration: none;"> forgot password?</a>
+         </div>
+         <!--close div for forgot password-->
+         </h5>
+         <br>
+         <!--login button design-->
+         <center>
+         <input type="submit" value="login"  class="button btn-md  control-label"> <a style="color: green" href="registeration.html">SignUp For New Users</a>
+         </center>
+      </form>
+      <!-- form end for login users-->
+      
+      </center>
+   </div>
+   <!-- location and contact-->
+   <div class="h container">
+      <!-- info div along with font icons inside-->
+      <i class="fa fa-phone fa-1">+919740832026</i>&nbsp;
+      <i class="fa fa-envelope-o fa-1">&nbsp;kishorgowda848@gmail.com</i>&nbsp;
+      <i class="fa fa-map-marker fa-1">&nbsp;vijaynagara</i>&nbsp;
+   </div>
+   <!-- the contact  help div-->
+   <div class="container" style="background-color: steelblue;">
+      <center><b>Got a question?</b>send us email or<b> call us at 1(800)555-5555</b>
+      <button class="btn-danger">Get Started Now</button>
+      </center>
+   </div>
+   <!-- content help close-->
+   <!-- this section is all about about section-->
+   <div class="container" style="background-color:#E5e4e2;">
+      <!-- footer container close-->
+      <br>
+      <br>
+      <div class="row">
+         <!-- footer section--->
+         <div class="col-xs-3"><b>Quik Links</b>
+            <br>About us
+            <br>contact us
+            <br>Careers
+            <br>All Cities
+            <br>Help & support
+            <br>Advertise with us
+         </div>
+         <div class="col-xs-3"><b>How to sell fast</b>
+            <br>how to sell fast
+            <br>Membership
+            <br>Banner Advertising
+            <br>Promot your ad
+            <br>Jobs Delivers
+            <br>FAQ
+         </div>
+         <div class="col-xs-3"><b>Follow us on</b>
+            <br> <i class="fa fa-facebook iio" style="background-color:blue;">
+            </i>Facebook
+            <br> <i class="fa fa-twitter iio" style=" background-color:#1dcaff;"></i>Twitter
+            <br> <i class="fa fa-google-plus iio" style="background-color:#d34836;"></i>Google+
+            <br> <i class="fa fa-youtube iio" style="background-color:#ff0000;"></i>Youtube
+            <br>
+         </div>
+         <div class="col-xs-3"><b>Newsletter</b>
+            <br>Job is worldest leading portal platform that brings!
+            <br>
+            <input type="email" placeholder="your email id" class="form-control">
+            <br>
+            <button class="btn-success  ">sign up</button>
+         </div>
+      </div>
+      <!-- footer section close-->
+   </div>
+   <!-- footer container div close-->
+</body>
+<!-- body tag close-->
+</html>
